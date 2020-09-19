@@ -6,14 +6,16 @@ Created on Wed Sep  9 10:21:15 2020
 @author: ryanfinegan
 """
 
+#importing libraries needed for the first assignment 
 import numpy as np
 import matplotlib.pyplot as plt
 
 def main():
-    x = np.arange(0,2*np.pi,.01)
-    y = np.sin(x)
-    z = np.cos(x)
-    plt.plot(x,y,x,z)
+    #assignment said for one period which is 2 pi 
+    period = np.arange(0,2*np.pi,.01)
+    x = np.sin(period)
+    y = np.cos(period)
+    plt.plot(period,x,period,y)
     plt.show()
     
 if __name__ == '__main__':
