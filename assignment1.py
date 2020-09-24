@@ -15,7 +15,10 @@ def main():
     period = np.arange(0,2*np.pi,.01)
     x = np.sin(period)
     y = np.cos(period)
-    plt.plot(period,x,period,y)
+    z = np.tan(period)
+    plt.plot(period,x,period,y,period,z)
+    # Adding ylim prevents the graph from being skewed as tangent values go to infinity
+    plt.ylim(-4, 4)
     plt.show()
     
 if __name__ == '__main__':
